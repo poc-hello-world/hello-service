@@ -5,7 +5,7 @@ pull_request_rules:
        - status-success=Amazon ECR Private
        - status-success=Amazon ECR Public
        - status-success=Local build
-       - status-success=Go tests
+       - status-success=JavaScript tests
        - status-success=Dockerfile linter
        - status-success=Local build
        - base=main

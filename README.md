@@ -26,6 +26,28 @@ For more complex demos see:
 - Istio's [BookInfo](https://istio.io/docs/examples/bookinfo/)
 - Kubernetes' [Guestbook](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/)
 
+## Usage
+
+This repository is configured with support for [GitPod](https://gitpod.io) for easy development.
+
+Local application commands:
+
+```console
+npm ci # to install all dependencies
+
+npm build # to build the app
+
+npm start # to run the app (if not already running)
+```
+
+Docker commands, with the mention that **you really should not put this in a container**:
+
+```console
+docker run --interactive --tty --rm \
+  --publish 3000:3000 \
+  public.ecr.aws/poc-hello-world/hello-service:latest
+```
+
 ## Configuration and forking
 
 This repository is fork-friendly!
@@ -50,3 +72,7 @@ If you extend this application to do something, please create a Pull Request bac
 ## License
 
 This project is provided under the [MIT License](https://opensource.org/licenses/MIT). See [LICENSE](./LICENSE) for more information.
+
+## Credits
+
+Special credits go to [@adaschevici](https://artur.wtf) for writing this. Thank you!
