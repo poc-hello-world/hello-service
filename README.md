@@ -10,7 +10,7 @@ Proof-of-Concept (PoC) application that calls 2 other services.
 
 For example for "_Hello world!_" this app would be the one providing calling 2 services to get "_Hello_" and "_world_", and it would add the "_!_" at the end.
 
-![Architecture diagram](./assets/poc-hello-world.png)
+![Architecture diagram showing the flow: Hello service, a React app, calls Greeting service to get a greeting (eg "hello") and calls Naming service to get a name (eg "world"). Hello service then adds the answer together for the final result: "Hello World!"](./assets/poc-hello-world.png)
 
 ## Intended use
 
