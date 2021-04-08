@@ -1,0 +1,9 @@
+.Title {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.App {
+  display: flex;
+  justify-content: space-evenly;
+}

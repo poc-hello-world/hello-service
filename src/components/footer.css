@@ -1,0 +1,12 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  word-wrap: break-word;
+}
+
+.heading {
+  font-size: 4.5rem;
+}
