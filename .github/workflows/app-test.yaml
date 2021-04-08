@@ -1,0 +1,38 @@
+name: App / Test
+
+on:
+  push:
+    paths:
+      - '.github/workflows/**'
+      - '**.js'
+      - package.json
+      - package-lock.json
+      - .dockerignore
+      - Dockerfile
+
+jobs:
+  App:
+    name: JavaScript tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v2
+
+      - name: Not implemented
+        run: |
+          echo "TODO" # Percy.io would be a better idea here
+
+  Dockerfile:
+    name: Dockerfile linter
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v2
+
+      - name: Run hadolint
+        uses: reviewdog/action-hadolint@master
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review

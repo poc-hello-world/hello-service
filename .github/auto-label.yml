@@ -1,0 +1,15 @@
+bump:patch:
+  - '**'
+  - '.*'
+  - '.*/**'
+
+area/automation:
+  - .github/*
+  - .github/**/*
+  - .mergify.yml
+
+area/js:
+  - '**.js'
+  - package.json
+  - package-lock.json
+
