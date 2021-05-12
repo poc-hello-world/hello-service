@@ -62,7 +62,7 @@ jobs:
       - name: Bump the version based on PR labels
         if: github.ref == 'refs/heads/main' && steps.job.outputs.is_needed == 'true'
         id: bumpr
-        uses: haya14busa/action-bumpr@v1
+        uses: haya14busa/action-bumpr@v1.5.1
 
       - name: Prepare for container image build
         if: steps.job.outputs.is_needed == 'true'
@@ -165,7 +165,7 @@ jobs:
       - name: Bump the version based on PR labels
         if: github.ref == 'refs/heads/main' && steps.job.outputs.is_needed == 'true'
         id: bumpr
-        uses: haya14busa/action-bumpr@v1
+        uses: haya14busa/action-bumpr@v1.5.1
 
       - name: Prepare for container image build
         if: steps.job.outputs.is_needed == 'true'
@@ -260,7 +260,7 @@ jobs:
       - name: Bump the version based on PR labels
         if: github.ref == 'refs/heads/main' && steps.job.outputs.is_needed == 'true'
         id: bumpr
-        uses: haya14busa/action-bumpr@v1
+        uses: haya14busa/action-bumpr@v1.5.1
 
       - name: Prepare for container image build
         if: steps.job.outputs.is_needed == 'true'
