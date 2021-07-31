@@ -113,7 +113,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          no-cache: true # Waiting for https://github.com/docker/buildx/pull/535
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           file: ./Dockerfile
           platforms: linux/amd64
           labels: |
@@ -216,7 +217,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          no-cache: true # Waiting for https://github.com/docker/buildx/pull/535
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           file: ./Dockerfile
           platforms: linux/amd64
           labels: |
@@ -293,7 +295,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          no-cache: true # Waiting for https://github.com/docker/buildx/pull/535
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           file: ./Dockerfile
           platforms: linux/amd64
           labels: |
